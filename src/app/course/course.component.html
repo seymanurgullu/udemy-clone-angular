@@ -1,0 +1,26 @@
+<div class="row mb-3">
+    <h4 class="fw-bold mb-3">Students are viewing</h4>
+
+    <div class="col-md-3" *ngFor="let course of courses">
+        <div class="card border-0" style="width: 14rem;">
+            <img src={{course.imagePath}} class="card-img-top">
+            <div class="card-body px-0 py-1">
+                    <h6 class="card-title fw-bold">{{course.title}}</h6>
+                <p class="my-0"><small class="text-muted">{{course.instructor}}</small></p>
+                <p class="card-text text-warning fw-bold my-0">{{course.stars}}
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <small class="text-muted fw-light"> ({{course.student}})</small>
+                </p>
+                <p class="card-text fw-bold">₺{{course.discountedPrice}} <small
+                        class="text-muted fw-light text-decoration-line-through"> ₺{{course.price}}</small></p>
+                        
+            <span class="badge bg-warning text-dark">Bestseller</span>
+            </div>
+        </div>
+    </div>
+    
+</div>

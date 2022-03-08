@@ -1,0 +1,45 @@
+<div class="justify-content-between mt-5">
+    <h2 class="fw-bold">A broad selection of courses</h2>
+    <p>Choose from 155,000 online video courses with new additions published every month</p>
+</div>
+
+<div class="row">
+    <div class="col">
+        <nav class="nav">
+            <a class="nav-link text-secondary fw-bold" aria-current="page" href="#" *ngFor="let category of categories">{{category.name}}</a> 
+          </nav>
+    </div>
+</div>
+<div class="row mb-4">
+    <div class="col border p-4">
+        <h4 class="fw-bold">Expand your career opportunities with Python</h4>
+        <p class="w-50">Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was...</p>
+        
+        <button type="button" class="btn btn-outline-dark rounded-0 fw-bold mb-5">Explore Python</button>
+
+        <div class="row">
+            <div class="col-md-3" *ngFor="let course of courses">
+                <div class="card border-0" style="width: 14rem;">
+                    <img src={{course.imagePath}} class="card-img-top">
+                    <div class="card-body px-0 py-1">
+                            <h6 class="card-title fw-bold">{{course.title}}</h6>
+                        <p class="my-0"><small class="text-muted">{{course.instructor}}</small></p>
+                        <p class="card-text text-warning fw-bold my-0">{{course.stars}}
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <small class="text-muted fw-light"> ({{course.student}})</small>
+                        </p>
+                        <p class="card-text fw-bold">₺{{course.discountedPrice}} <small
+                                class="text-muted fw-light text-decoration-line-through"> ₺{{course.price}}</small></p>
+                                
+                    <span class="badge bg-warning text-dark">Bestseller</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

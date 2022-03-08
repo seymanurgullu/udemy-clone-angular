@@ -1,0 +1,23 @@
+<div style="background:#f8f9fb;padding: 3.2rem 2.4rem">
+    <div class="container">
+        <h4 class="fw-bold mb-4">Featured topics by category</h4>
+        <div class="row">
+            <div class="col-md-3 d-flex flex-column" *ngFor="let topic of topics">
+                <h5 class="fw-bold">{{topic.name}}</h5>
+                <div class="mb-4 d-flex flex-column">
+                    <a href="" class="text-danger fw-bold">Python</a>
+                    <span class="text-muted fs-6">30,366,156 students</span>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                    <a href="" class="text-danger fw-bold">Web Development</a>
+                    <span class="text-muted fs-6">9,776,589 students</span>
+                </div>
+                <div class="mb-4 d-flex flex-column">
+                    <a href="" class="text-danger fw-bold">Machine Learning</a>
+                    <span class="text-muted fs-6">6,093,126 students</span>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-dark rounded-0 fw-bold mb-5">Explore more topics</button>
+    </div>
+</div>
